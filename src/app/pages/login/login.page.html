@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>My Chat App</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-padding">
+ 
+  <form [formGroup]="credentialForm">
+    <ion-item>
+      <ion-input
+        placeholder="Email address"
+        formControlName="email"
+       
+      ></ion-input>
+    </ion-item>
+  
+ 
+    <ion-item>
+      <ion-input
+      placeholder="Password"
+      type="password"
+      formControlName="password"
+     
+    ></ion-input>
+    </ion-item>
+    
+  </form>
+ 
+    <ion-button (click)="signUp()"  color="warning">Sing up</ion-button>
+    <ion-button (click)="signIn()"  color="success">Log in</ion-button>
+ 
+</ion-content>
